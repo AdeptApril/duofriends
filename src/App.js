@@ -9,13 +9,18 @@ class App extends Component {
   {
     super(props);
     this.retrieveDataOn = this.retrieveDataOn.bind(this);
+    this.assignData = this.assignData.bind(this);
     // DuoAPI.getUser = DuoAPI.getUser.bind(this);
     // DuoAPI.onUserReady = DuoAPI.onUserReady.bind(this);
-    this.state = { profile: [] };
+    this.state = {
+      profile: [],
+      adeptApril: [],
+      greenvioletamy: []
+    };
   }
 
   retrieveDataOn(username) {
-    // fetch(`https://www.duolingo.com/api/1/users/show?username=AdeptApril`, { credentials: 'include' })
+// fetch(`https://www.duolingo.com/api/1/users/show?username=AdeptApril`, { credentials: 'include' })
     fetch(`https://www.duolingo.com/users/` + username, { credentials: 'include' })
       .then(res => {
         if(res.ok) {
@@ -30,10 +35,9 @@ class App extends Component {
       .then( myJSON=> {
         //console.log(JSON.parse(JSON.stringify(myJSON)));
         //return JSON.parse(JSON.stringify(myJSON));
-        this.setState({profile:JSON.parse(JSON.stringify(myJSON))});
-        console.log(this.state.profile.username);
+        this.assignData(JSON.parse(JSON.stringify(myJSON)));
       });
-      //.then(items=>this.setState({items}));
+    //.then(items=>this.setState({items}));
     //DuoAPI.getUser({username:username});
     // DuoAPI.onUserReady(function(){
     //   // console.log(DuoAPI.getProfile().fullname);
@@ -41,6 +45,23 @@ class App extends Component {
     // });
     // if(result != null)
     //   this.setState({profile:result});
+  }
+
+  assignData(newProfile)
+  {
+    console.log(newProfile.username);
+    switch(newProfile.username)
+    {
+      case "AdeptApril":
+        this.setState({adeptApril:newProfile});
+        break;
+      case "greenvioletamy":
+        this.setState({greenvioletamy:newProfile});
+        break;
+      default:
+        console.log("assignData got to a default case, somehow, with username: " + newProfile.username);
+        break;
+    }
   }
 
   render() {
@@ -51,14 +72,21 @@ class App extends Component {
           <div>
             <p className="summon-info"
               // onMouseEnter={() => this.handlePictureChange("bioPic")}
-               onClick={() => this.retrieveDataOn("AdeptApril")}>
+               onClick={
+                 () => {
+                   this.retrieveDataOn("AdeptApril");
+                   this.retrieveDataOn("greenvioletamy");
+                 }
+               }>
               Retrieve data from Duolingo
             </p>
           </div>
           <div>
             <ul>
               {/*{this.state.items.map(item=><li key={item.id}>{item.body}</li>)}*/}
-              {this.state.profile.fullname}
+              {/*{this.state.profile.fullname}*/}
+              {this.state.adeptApril.fullname}
+              {this.state.greenvioletamy.fullname}
             </ul>
           </div>
           <p>

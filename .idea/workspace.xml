@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b385d4-23f7-4c24-9d74-3869cb298b8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DuoAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JSONP.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DuoAPI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSONP.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,11 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-161">
-              <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
-              <folding>
-                <element signature="e#115#148#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="384">
+              <caret line="86" selection-start-line="86" selection-end-line="86" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -52,15 +48,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
               <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DuoAPI.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1886">
-              <caret line="82" column="24" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -95,8 +82,8 @@
         <option value="$PROJECT_DIR$/src/duoapi.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/JSONP.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/DuoAPI.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -178,12 +165,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567925705428</updated>
-      <workItem from="1567925706901" duration="14405000" />
+      <workItem from="1567925706901" duration="21809000" />
     </task>
+    <task id="LOCAL-00001" summary="Attempted to use DuoAPI, did not particularly work">
+      <created>1568052873694</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568052873694</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Now works to display fullname info after retrieving profile from Duolingo">
+      <created>1568058491821</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568058491821</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14405000" />
+    <option name="totallyTimeSpent" value="21809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -212,6 +214,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Attempted to use DuoAPI, did not particularly work" />
+    <MESSAGE value="Now works to display fullname info after retrieving profile from Duolingo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now works to display fullname info after retrieving profile from Duolingo" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -238,6 +245,13 @@
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DuoAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -245,20 +259,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DuoAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1886">
-          <caret line="82" column="24" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
-          <folding>
-            <element signature="e#115#148#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="384">
+          <caret line="86" selection-start-line="86" selection-end-line="86" selection-end-column="46" />
         </state>
       </provider>
     </entry>
